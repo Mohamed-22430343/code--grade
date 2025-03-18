@@ -1,11 +1,50 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ramen Rater</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
 </head>
 <body>
-    <script type="module" src="index.js"></script>
-</body>
-</html>
+    <header>
+        <h3>Ramen Rater</h3>
+    </header>
+    <main>
+        <div id="ramen">
+            <img src="shoyu.jpg" alt="">
+            <img src="gyukotsu.jpg" alt="">
+            <img src="naruto.jpg" alt="">
+            <img src="nirvana.jpg" alt="">
+            <img src="kojiro.jpg" alt="">
+            
+        </div>
+        <div id="place">
+            <img class="holder" src="image-placeholder.jpeg" alt="">
+            <h2 class="name">Insert Name Here</h2>
+            <h3 class="restaurant">Insert Restaurant Here</h3>
+        </div>
+
+        <h3>Rating:</h3>
+     <p>
+     <span id='rating-display'>Insert rating here</span> / 10
+     </p>
+     <h3>Comment:</h3>
+     <p id='comment-display'>
+     Insert comment here
+     </p>
+
+     <form id="new-ramen">
+         <h4>Add New Ramen</h4>
+         <label for="name">Name: </label>
+         <input type="text" name="name" id="new-name" />
+           <label for="restaurant">Restaurant: </label>
+         <input type="text" name="restaurant" id="new-restaurant" />
+         <label for="image">Image: </label>
+         <input type="text" name="image" id="new-image" />
+         <label for="rating">Rating: </label>
+         <input type="number" name="rating" id="new-rating" />
+         <label for="new-comment">Comment: </label>
+         <textarea name="new-comment" id="new-comment"></textarea>
+         <input type="submit" value="Create" />
+     </form>
